@@ -4,7 +4,6 @@ using UnityEngine;
 public class Whirlpool : MonoBehaviour
 {
 
-    public float RotationSpeed = 5f;
     private float _Rotation = 0;
     public Transform startPosition;
     
@@ -16,6 +15,9 @@ public class Whirlpool : MonoBehaviour
         }
     }
 
+
+    
+    
     void RotatePool()
     {
         _Rotation = _Rotation + 90;
