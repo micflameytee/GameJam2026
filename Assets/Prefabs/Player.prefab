@@ -139,8 +139,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 667c93e1d15a72745b013aa86f4767e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
-  FreeMovement: 1
-  moveSpeed: 5
+  FreeMovement: 0
+  rb2D: {fileID: 8852429371171700215}
+  moveSpeed: 1
+  jumpHeight: 5
   PlayerVal: 0
 --- !u!50 &8852429371171700215
 Rigidbody2D:
@@ -168,7 +170,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &4387203930688357455
 BoxCollider2D:
   m_ObjectHideFlags: 0

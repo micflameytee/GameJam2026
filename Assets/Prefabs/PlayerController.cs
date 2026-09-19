@@ -103,13 +103,23 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""priority"": 0
                 },
                 {
-                    ""name"": ""Move"",
+                    ""name"": ""FreeMove"",
                     ""type"": ""Value"",
                     ""id"": ""e103da58-546b-4073-9e7f-6427f7f234e6"",
                     ""expectedControlType"": ""Vector2"",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true,
+                    ""priority"": 0
+                },
+                {
+                    ""name"": ""LockMove"",
+                    ""type"": ""Button"",
+                    ""id"": ""1679b8ed-fb9e-40c8-b20c-0e6f519e7cb8"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false,
                     ""priority"": 0
                 }
             ],
@@ -132,7 +142,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Move"",
+                    ""action"": ""FreeMove"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -143,7 +153,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Move"",
+                    ""action"": ""FreeMove"",
                     ""isComposite"": true,
                     ""isPartOfComposite"": false
                 },
@@ -154,7 +164,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Move"",
+                    ""action"": ""FreeMove"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -165,7 +175,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Move"",
+                    ""action"": ""FreeMove"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -176,7 +186,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Move"",
+                    ""action"": ""FreeMove"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -187,9 +197,31 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Move"",
+                    ""action"": ""FreeMove"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""6380d1b7-1831-4005-a2b3-bc6f0bca5210"",
+                    ""path"": ""<Keyboard>/a"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""LockMove"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""8ebe8a8a-e452-456b-82e7-acca1952ba34"",
+                    ""path"": ""<Keyboard>/d"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""LockMove"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -199,7 +231,8 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         // GamePlay
         m_GamePlay = asset.FindActionMap("GamePlay", throwIfNotFound: true);
         m_GamePlay_Jump = m_GamePlay.FindAction("Jump", throwIfNotFound: true);
-        m_GamePlay_Move = m_GamePlay.FindAction("Move", throwIfNotFound: true);
+        m_GamePlay_FreeMove = m_GamePlay.FindAction("FreeMove", throwIfNotFound: true);
+        m_GamePlay_LockMove = m_GamePlay.FindAction("LockMove", throwIfNotFound: true);
     }
 
     ~@PlayerControls()
@@ -281,7 +314,8 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
     private readonly InputActionMap m_GamePlay;
     private List<IGamePlayActions> m_GamePlayActionsCallbackInterfaces = new List<IGamePlayActions>();
     private readonly InputAction m_GamePlay_Jump;
-    private readonly InputAction m_GamePlay_Move;
+    private readonly InputAction m_GamePlay_FreeMove;
+    private readonly InputAction m_GamePlay_LockMove;
     /// <summary>
     /// Provides access to input actions defined in input action map "GamePlay".
     /// </summary>
@@ -298,9 +332,13 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         /// </summary>
         public InputAction @Jump => m_Wrapper.m_GamePlay_Jump;
         /// <summary>
-        /// Provides access to the underlying input action "GamePlay/Move".
+        /// Provides access to the underlying input action "GamePlay/FreeMove".
         /// </summary>
-        public InputAction @Move => m_Wrapper.m_GamePlay_Move;
+        public InputAction @FreeMove => m_Wrapper.m_GamePlay_FreeMove;
+        /// <summary>
+        /// Provides access to the underlying input action "GamePlay/LockMove".
+        /// </summary>
+        public InputAction @LockMove => m_Wrapper.m_GamePlay_LockMove;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -330,9 +368,12 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
             @Jump.started += instance.OnJump;
             @Jump.performed += instance.OnJump;
             @Jump.canceled += instance.OnJump;
-            @Move.started += instance.OnMove;
-            @Move.performed += instance.OnMove;
-            @Move.canceled += instance.OnMove;
+            @FreeMove.started += instance.OnFreeMove;
+            @FreeMove.performed += instance.OnFreeMove;
+            @FreeMove.canceled += instance.OnFreeMove;
+            @LockMove.started += instance.OnLockMove;
+            @LockMove.performed += instance.OnLockMove;
+            @LockMove.canceled += instance.OnLockMove;
         }
 
         /// <summary>
@@ -347,9 +388,12 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
             @Jump.started -= instance.OnJump;
             @Jump.performed -= instance.OnJump;
             @Jump.canceled -= instance.OnJump;
-            @Move.started -= instance.OnMove;
-            @Move.performed -= instance.OnMove;
-            @Move.canceled -= instance.OnMove;
+            @FreeMove.started -= instance.OnFreeMove;
+            @FreeMove.performed -= instance.OnFreeMove;
+            @FreeMove.canceled -= instance.OnFreeMove;
+            @LockMove.started -= instance.OnLockMove;
+            @LockMove.performed -= instance.OnLockMove;
+            @LockMove.canceled -= instance.OnLockMove;
         }
 
         /// <summary>
@@ -398,11 +442,18 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnJump(InputAction.CallbackContext context);
         /// <summary>
-        /// Method invoked when associated input action "Move" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// Method invoked when associated input action "FreeMove" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
         /// </summary>
         /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-        void OnMove(InputAction.CallbackContext context);
+        void OnFreeMove(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "LockMove" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnLockMove(InputAction.CallbackContext context);
     }
 }
