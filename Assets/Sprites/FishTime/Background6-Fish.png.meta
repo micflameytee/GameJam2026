@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 7eae552fb50c6064caeb7f65daa817f7
+guid: ce366b14911db97428dac60136d622ea
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 382256422626263667
-    second: Background2-Fish_0
+      213: 8338134220412110304
+    second: Background6-Fish_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -115,13 +115,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Background2-Fish_0
+      name: Background6-Fish_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 5
         width: 32
-        height: 32
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,8 +130,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 37200cbe03c0e4500800000000000000
-      internalID: 382256422626263667
+      spriteID: 0e5413965e007b370800000000000000
+      internalID: 8338134220412110304
       vertices: []
       indices: 
       edges: []
@@ -150,7 +150,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Background2-Fish_0: 382256422626263667
+      Background6-Fish_0: 8338134220412110304
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

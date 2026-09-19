@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 7eae552fb50c6064caeb7f65daa817f7
+guid: 202a54e176198f0438e6a37a1338354e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 382256422626263667
-    second: Background2-Fish_0
+      213: 1432401297749993009
+    second: Whirlpool_0
+  - first:
+      213: -3955021342301904399
+    second: Whirlpool_1
+  - first:
+      213: -5999119167313972361
+    second: Whirlpool_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +52,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 0
   alignment: 0
@@ -115,13 +121,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Background2-Fish_0
+      name: Whirlpool_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 32
-        height: 32
+        x: 4
+        y: 10
+        width: 25
+        height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,8 +136,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 37200cbe03c0e4500800000000000000
-      internalID: 382256422626263667
+      spriteID: 13662302469e0e310800000000000000
+      internalID: 1432401297749993009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Whirlpool_1
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 20
+        width: 26
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f1a1053b01fc19c0800000000000000
+      internalID: -3955021342301904399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Whirlpool_2
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 3
+        width: 26
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 773730be6e8debca0800000000000000
+      internalID: -5999119167313972361
       vertices: []
       indices: 
       edges: []
@@ -140,7 +190,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -150,7 +200,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Background2-Fish_0: 382256422626263667
+      Whirlpool_0: 1432401297749993009
+      Whirlpool_1: -3955021342301904399
+      Whirlpool_2: -5999119167313972361
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 7eae552fb50c6064caeb7f65daa817f7
+guid: d29e1867768123044ae1eccd8639cf10
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 382256422626263667
-    second: Background2-Fish_0
+      213: 7591875428510747436
+    second: Background5-Fish_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -115,7 +115,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Background2-Fish_0
+      name: Background5-Fish_0
       rect:
         serializedVersion: 2
         x: 0
@@ -130,8 +130,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 37200cbe03c0e4500800000000000000
-      internalID: 382256422626263667
+      spriteID: c2b466f8a72cb5960800000000000000
+      internalID: 7591875428510747436
       vertices: []
       indices: 
       edges: []
@@ -150,7 +150,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Background2-Fish_0: 382256422626263667
+      Background5-Fish_0: 7591875428510747436
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

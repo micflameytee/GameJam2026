@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 7eae552fb50c6064caeb7f65daa817f7
+guid: d8de345c50dbab843a3f09ff9d6d9583
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 382256422626263667
-    second: Background2-Fish_0
+      213: 5125959681885478527
+    second: DNAFinishPoint_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -115,13 +115,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Background2-Fish_0
+      name: DNAFinishPoint_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 5
         y: 0
-        width: 32
-        height: 32
+        width: 26
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,8 +130,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 37200cbe03c0e4500800000000000000
-      internalID: 382256422626263667
+      spriteID: f7e12c31c21132740800000000000000
+      internalID: 5125959681885478527
       vertices: []
       indices: 
       edges: []
@@ -150,7 +150,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Background2-Fish_0: 382256422626263667
+      DNAFinishPoint_0: 5125959681885478527
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
