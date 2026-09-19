@@ -4110,11 +4110,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
---- !u!4 &1030122726 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2093057448959943593, guid: 9c7d03ccd56f62b4f98cc53a3aeb35fa, type: 3}
-  m_PrefabInstance: {fileID: 1932391772}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1178031723
 GameObject:
   m_ObjectHideFlags: 0
@@ -4816,7 +4811,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1310326945}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: StartPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4830,12 +4825,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1310326944}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -9.89472, y: -4.02938, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1030122726}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1328963195
 GameObject:
@@ -5868,16 +5863,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 4387203930688357455, guid: 9c7d03ccd56f62b4f98cc53a3aeb35fa, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1.6875
+      objectReference: {fileID: 0}
+    - target: {fileID: 4387203930688357455, guid: 9c7d03ccd56f62b4f98cc53a3aeb35fa, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1.3125
+      objectReference: {fileID: 0}
     - target: {fileID: 4665220501201131694, guid: 9c7d03ccd56f62b4f98cc53a3aeb35fa, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 4558769042553921906, guid: b51e407112a38a141a851fbe5fd5483f, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 2093057448959943593, guid: 9c7d03ccd56f62b4f98cc53a3aeb35fa, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1310326945}
+    m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9c7d03ccd56f62b4f98cc53a3aeb35fa, type: 3}
 --- !u!1 &1959913998
@@ -6929,3 +6929,4 @@ SceneRoots:
   - {fileID: 1186415037}
   - {fileID: 2029614934}
   - {fileID: 144538767}
+  - {fileID: 1310326945}

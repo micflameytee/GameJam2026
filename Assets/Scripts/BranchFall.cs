@@ -3,8 +3,6 @@ using UnityEngine;
 
 public class BranchFall : MonoBehaviour
 {
-    private float _Rotation = 0;
-    public Collider2D FallingBranch;
     public Rigidbody2D rb;
 
     private bool _hasTriggered = false;
@@ -22,7 +20,7 @@ public class BranchFall : MonoBehaviour
     {
         yield return new WaitForSeconds(delay);
 
-        Debug.Log($"player");
+        // Debug.Log($"player");
         if (rb != null)
         {
             rb.bodyType = RigidbodyType2D.Dynamic;
