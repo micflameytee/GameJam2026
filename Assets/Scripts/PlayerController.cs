@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour
     private Vector2 _moveDirection;
     private Vector2 _jumpDirection;
     private Rigidbody2D rigidbody;
+    private bool _CollisionOccurred;
 
     public void Update()
     {
@@ -43,12 +44,18 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
+        _CollisionOccurred = false;
         rigidbody.AddForce(_moveDirection.normalized * moveSpeed, ForceMode2D.Impulse);
+    }
+
+    public void oncollision(InputAction.CallbackContext context)
+    {
+        _CollisionOccurred = true;
     }
 
     private void HandleMove(InputAction.CallbackContext context)
     {
-        if (FreeMovement)
+        if (FreeMovement || _CollisionOccurred)
         {
             _moveDirection = context.ReadValue<Vector2>();
         }
@@ -62,7 +69,7 @@ public class PlayerController : MonoBehaviour
                 rigidbody.AddForce(_jumpDirection.normalized * jumpHeight, ForceMode2D.Impulse);
             }
         }
-        Debug.Log(_moveDirection);
+        // Debug.Log(_moveDirection);
     }
 
     // private void HandleJump(InputAction.CallbackContext context)
