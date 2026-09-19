@@ -3,7 +3,8 @@ using UnityEngine.SceneManagement;
 
 public class LevelChange : MonoBehaviour
 {
-    public string LevelName;
+    public string CurrLevelName;
+    public string NextLevelName;
     private SpriteRenderer spriteRenderer;
 
     private void Start()
@@ -30,7 +31,7 @@ public class LevelChange : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log($"DNA Triggered");
-        SceneManager.LoadScene("Jurassic");
-        SceneManager.UnloadScene("Cambrian");
+        SceneManager.LoadScene(NextLevelName);
+        SceneManager.UnloadScene(CurrLevelName);
     }
 }
