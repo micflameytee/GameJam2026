@@ -4,29 +4,26 @@ using UnityEngine.SceneManagement;
 public class LevelChange : MonoBehaviour
 {
     public string LevelName;
+    private SpriteRenderer spriteRenderer;
+
+    private void Start()
+    {
+        spriteRenderer = GetComponent<SpriteRenderer>();
+    }
     void Update()
     {
-        if (Time.frameCount % 10 == 0)
+        if (Time.frameCount % 30 == 0)
         {
-            SpinDNA();
+            //Debug.Log($"SpinLeft");
+            spriteRenderer.flipX = true;
+         
         }
-    }
 
-    void SpinDNA()
-    {
-        bool left = false;
-
-        if(left == false)
+        if (Time.frameCount % 20 == 0)
         {
-            gameObject.transform.localScale = new Vector3(-1, 1, 1);
-            left = true;
+            //Debug.Log($"SpinRight");
+            spriteRenderer.flipX = false;
         }
-        else
-        {
-            gameObject.transform.localScale = new Vector3(1, 1, 1);
-            left = false;
-        }
-        
     }
 
     [System.Obsolete]
