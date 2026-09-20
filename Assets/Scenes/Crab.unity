@@ -928,6 +928,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -3185749975680975073, guid: 9c7d03ccd56f62b4f98cc53a3aeb35fa, type: 3}
+      propertyPath: FreeJump
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -3185749975680975073, guid: 9c7d03ccd56f62b4f98cc53a3aeb35fa, type: 3}
+      propertyPath: FreeMovement
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2093057448959943593, guid: 9c7d03ccd56f62b4f98cc53a3aeb35fa, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.49927
@@ -976,6 +984,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 8bacdf330af3ea149a035c37a8fd9f5f, type: 3}
+    - target: {fileID: 8852429371171700215, guid: 9c7d03ccd56f62b4f98cc53a3aeb35fa, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
