@@ -1,0 +1,522 @@
+fileFormatVersion: 2
+guid: 0f9ec1fe4d2b2d544ba7735bcb73ba71
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2576743688733686176
+    second: MonkeyVines_0
+  - first:
+      213: 4807220068980120847
+    second: MonkeyVines_1
+  - first:
+      213: 8768904807728863900
+    second: MonkeyVines_2
+  - first:
+      213: -2213729119891245458
+    second: MonkeyVines_3
+  - first:
+      213: 433501775923734492
+    second: MonkeyVines_4
+  - first:
+      213: 1030158896663580931
+    second: MonkeyVines_5
+  - first:
+      213: -1247448072089668054
+    second: MonkeyVines_6
+  - first:
+      213: 1370581179901813288
+    second: MonkeyVines_7
+  - first:
+      213: -4898060974070730381
+    second: MonkeyVines_8
+  - first:
+      213: 5337086154216738165
+    second: MonkeyVines_9
+  - first:
+      213: -7748591443705986866
+    second: MonkeyVines_10
+  - first:
+      213: -1579190791062479869
+    second: MonkeyVines_11
+  - first:
+      213: 5097613411217090171
+    second: MonkeyVines_12
+  - first:
+      213: -6798990674291056892
+    second: MonkeyVines_13
+  - first:
+      213: 7403112537685960586
+    second: MonkeyVines_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MonkeyVines_0
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 43
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a973349bbe62c320800000000000000
+      internalID: 2576743688733686176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkeyVines_1
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 40
+        width: 49
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0d50b8de2da6b240800000000000000
+      internalID: 4807220068980120847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkeyVines_2
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 47
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9ad4e5867861b970800000000000000
+      internalID: 8768904807728863900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkeyVines_3
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 26
+        width: 69
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e66b1f328114741e0800000000000000
+      internalID: -2213729119891245458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkeyVines_4
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 44
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd76f63819b140600800000000000000
+      internalID: 433501775923734492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkeyVines_5
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 27
+        width: 25
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30157d9fe0cdb4e00800000000000000
+      internalID: 1030158896663580931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkeyVines_6
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 43
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a267953769c20bee0800000000000000
+      internalID: -1247448072089668054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkeyVines_7
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 36
+        width: 64
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82222eb4258450310800000000000000
+      internalID: 1370581179901813288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkeyVines_8
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 27
+        width: 12
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3717f40ce77960cb0800000000000000
+      internalID: -4898060974070730381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkeyVines_9
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 51
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57d8eb58493211a40800000000000000
+      internalID: 5337086154216738165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkeyVines_10
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 13
+        width: 18
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec00640c229777490800000000000000
+      internalID: -7748591443705986866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkeyVines_11
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 34
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30c172aa756951ae0800000000000000
+      internalID: -1579190791062479869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkeyVines_12
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 9
+        width: 12
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b76acd1a36c5eb640800000000000000
+      internalID: 5097613411217090171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkeyVines_13
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 31
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40f10bb110225a1a0800000000000000
+      internalID: -6798990674291056892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MonkeyVines_14
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 11
+        width: 10
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a87230131a32db660800000000000000
+      internalID: 7403112537685960586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      MonkeyVines_0: 2576743688733686176
+      MonkeyVines_1: 4807220068980120847
+      MonkeyVines_10: -7748591443705986866
+      MonkeyVines_11: -1579190791062479869
+      MonkeyVines_12: 5097613411217090171
+      MonkeyVines_13: -6798990674291056892
+      MonkeyVines_14: 7403112537685960586
+      MonkeyVines_2: 8768904807728863900
+      MonkeyVines_3: -2213729119891245458
+      MonkeyVines_4: 433501775923734492
+      MonkeyVines_5: 1030158896663580931
+      MonkeyVines_6: -1247448072089668054
+      MonkeyVines_7: 1370581179901813288
+      MonkeyVines_8: -4898060974070730381
+      MonkeyVines_9: 5337086154216738165
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
