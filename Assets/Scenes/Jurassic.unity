@@ -999,6 +999,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -7787881691929820083, guid: f2ee9e68e27b8ea42959a244c1e14f5a, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1.4375
+      objectReference: {fileID: 0}
     - target: {fileID: -865323122901436293, guid: f2ee9e68e27b8ea42959a244c1e14f5a, type: 3}
       propertyPath: m_Offset.x
       value: -6
@@ -1007,10 +1011,22 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: -2.5
       objectReference: {fileID: 0}
+    - target: {fileID: 126807913257086836, guid: f2ee9e68e27b8ea42959a244c1e14f5a, type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 715297727168779732, guid: f2ee9e68e27b8ea42959a244c1e14f5a, type: 3}
       propertyPath: startPosition
       value: 
       objectReference: {fileID: 1310326945}
+    - target: {fileID: 1560988323623907718, guid: f2ee9e68e27b8ea42959a244c1e14f5a, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1445752048116141649, guid: 4c79e8855d1635a4183630a2e3b989e4, type: 3}
+    - target: {fileID: 1560988323623907718, guid: f2ee9e68e27b8ea42959a244c1e14f5a, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3723087759927709511, guid: f2ee9e68e27b8ea42959a244c1e14f5a, type: 3}
       propertyPath: m_Name
       value: TreeBranch

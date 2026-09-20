@@ -49,7 +49,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9682fb08af4ef647af97c70afef41ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BranchFall
-  FallingBranch: {fileID: -865323122901436293}
   rb: {fileID: 1786694215712799605}
 --- !u!50 &1786694215712799605
 Rigidbody2D:
@@ -304,7 +303,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -323,10 +322,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 5136338616471071478}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 65dcaba93eef23341a94f95a2456bcd8, type: 3}
+  m_Script: {fileID: 11500000, guid: a9682fb08af4ef647af97c70afef41ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BranchDamage
-  startPosition: {fileID: 2112551721102982461}
+  rb: {fileID: 0}
 --- !u!61 &5517997961331163400
 BoxCollider2D:
   m_ObjectHideFlags: 0
