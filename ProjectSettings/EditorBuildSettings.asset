@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Cambrian.unity
     guid: 9605ab590e072954bbfb614fa448e5a3
   - enabled: 1
+    path: Assets/Scenes/Paleoscene.unity
+    guid: 28f069717348663418f5cf9412fc1c14
+  - enabled: 1
     path: Assets/Scenes/Jurassic.unity
     guid: ca4d02d9ce788534b859e00d4e5f2853
   - enabled: 1
