@@ -3,7 +3,6 @@ using UnityEngine.SceneManagement;
 
 public class LevelChange : MonoBehaviour
 {
-    public string CurrLevelName;
     public string NextLevelName;
     private SpriteRenderer spriteRenderer;
 
@@ -32,6 +31,5 @@ public class LevelChange : MonoBehaviour
     {
         Debug.Log($"DNA Triggered");
         SceneManager.LoadScene(NextLevelName);
-        SceneManager.UnloadScene(CurrLevelName);
     }
 }

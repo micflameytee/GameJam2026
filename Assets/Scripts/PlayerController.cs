@@ -49,6 +49,14 @@ public class PlayerController : MonoBehaviour
         rigidbody = GetComponent<Rigidbody2D>();
     }
 
+    private void OnDestroy()
+    {
+        Inputs.GamePlay.FreeMove.performed -= HandleMove;
+        Inputs.GamePlay.FreeMove.canceled -= HandleMove;
+        Inputs.Disable();
+        
+    }
+
     private void FixedUpdate()
     {
         // _CollisionOccurred = false;

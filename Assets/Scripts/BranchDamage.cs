@@ -8,7 +8,7 @@ public class BranchDamage : MonoBehaviour
     
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log($"player", other.gameObject);
+        // Debug.Log($"player", other.gameObject);
         if (other.CompareTag("Player"))
         {
             Debug.Log($"player moving");

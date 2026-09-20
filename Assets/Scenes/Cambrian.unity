@@ -286,7 +286,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2983929684901418225, guid: 73bd127ba20eee64da697b51d4323cfa, type: 3}
       propertyPath: NextLevelName
-      value: Jurrasic
+      value: Jurassic
       objectReference: {fileID: 0}
     - target: {fileID: 781652891174595224, guid: 73bd127ba20eee64da697b51d4323cfa, type: 3}
       propertyPath: m_LocalPosition.x
