@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -27,15 +26,13 @@ public class LevelChange : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    [System.Obsolete]
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (other.CompareTag("Player"))
+        if (collision.CompareTag("Player"))
         {
-            var startPos = GameObject.Find("SpawnPoint");
-            if (startPos == null)
-            {
-                throw new Exception("Start point not found");
-            }
+            Debug.Log($"DNA Triggered");
+            SceneManager.LoadScene(NextLevelName);
         }
     }
 }
