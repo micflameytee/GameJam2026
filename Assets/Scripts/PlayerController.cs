@@ -101,7 +101,7 @@ public class PlayerController : MonoBehaviour
 
     private Boolean WallCheck()
     {
-        Debug.Log(Physics2D.OverlapBox(wallCheckPos.position, wallCheckSize, 0, WallLayer));
+        // Debug.Log(Physics2D.OverlapBox(wallCheckPos.position, wallCheckSize, 0, WallLayer));
         return Physics2D.OverlapBox(wallCheckPos.position, wallCheckSize, 0, WallLayer);
     }
 

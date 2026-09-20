@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4387203930688357455}
   - component: {fileID: 8536682509396005513}
   - component: {fileID: 4665220501201131694}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -50,18 +50,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 667c93e1d15a72745b013aa86f4767e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
-  FreeMovement: 1
+  FreeMovement: 0
   FreeJump: 0
   rb2D: {fileID: 8852429371171700215}
   moveSpeed: 1
   jumpHeight: 5
-  PlayerVal: 0
   spriteRenderer: {fileID: 4665220501201131694}
   wallCheckPos: {fileID: 7030582037414027983}
-  wallCheckSize: {x: 0.1, y: 0.35}
+  wallCheckSize: {x: 0.15, y: 0.35}
   WallLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1
 --- !u!50 &8852429371171700215
 Rigidbody2D:
   serializedVersion: 5
@@ -87,7 +86,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!61 &4387203930688357455
 BoxCollider2D:
@@ -244,7 +243,7 @@ GameObject:
   - component: {fileID: 6514434168191794309}
   - component: {fileID: 3038372715764380641}
   - component: {fileID: 8577043908915922060}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -378,8 +377,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7030582037414027983}
-  m_Layer: 0
-  m_Name: GameObject
+  m_Layer: 6
+  m_Name: WallChecker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

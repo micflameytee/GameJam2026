@@ -1,11 +1,11 @@
 using Unity.Mathematics;
 using UnityEngine;
 
+[RequireComponent(typeof(EnemyCollider))]
 public class Whirlpool : MonoBehaviour
 {
 
     private float _Rotation = 0;
-    public Transform startPosition;
     
     void Update()
     {
@@ -15,20 +15,11 @@ public class Whirlpool : MonoBehaviour
         }
     }
 
-
-    
-    
     void RotatePool()
     {
         _Rotation = _Rotation + 90;
         transform.rotation = Quaternion.Euler(0, 0, _Rotation);
     }
     
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        Debug.Log($"player", other.gameObject);
-        other.transform.position = startPosition.position;
-    }
-
     
 }

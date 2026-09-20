@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 
+[RequireComponent(typeof(EnemyCollider))]
 public class HostileManager : MonoBehaviour
 {
     public Transform startPoint;
@@ -26,11 +27,5 @@ public class HostileManager : MonoBehaviour
         {
             direction = -1;
         }
-    }
-    
-
-    private void OnTriggerEnter(Collider other)
-    {
-        
     }
 }
